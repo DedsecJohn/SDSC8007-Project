@@ -1,0 +1,66 @@
+# ============================================================
+# Feedback Prize - English Language Learning
+# .gitignore
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- 虚拟环境 ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ---------- 系统文件 ----------
+.DS_Store
+Thumbs.db
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- 项目产物 (大文件，不入库) ----------
+output/
+logs/
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+*.pkl
+*.h5
+
+# submission 文件按需保留（通常也不必入库）
+submission*.csv
+
+# ---------- 数据 (比赛数据各自从 Kaggle 下载) ----------
+data/*.csv
+data/*.zip
+!data/.gitkeep
+
+# ---------- 缓存 ----------
+.cache/
+huggingface/
+.huggingface/
+transformers_cache/
+
+# ---------- 日志 ----------
+*.log
+wandb/
+runs/
+tb_logs/
